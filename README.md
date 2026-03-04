@@ -18,9 +18,11 @@ Wikipedia Stream → Kafka → Flink → Apache Iceberg → DuckDB → Grafana
 ## Status do Projeto
 - [x] Ambiente Docker com Kafka + Zookeeper + Flink
 - [x] Producer Python consumindo Wikipedia EventStream em tempo real
+- [x] Consumer Python lendo eventos do Kafka
 - [x] Flink job com Tumbling Window agregando edições por wiki
-- [ ] Armazenamento com Apache Iceberg
-- [ ] Observabilidade com Grafana
+- [x] Apache Iceberg — persistência ACID com time travel
+- [x] DuckDB — consultas analíticas no lakehouse
+- [ ] Observabilidade com Grafana + Prometheus
 
 ## Como rodar
 
