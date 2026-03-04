@@ -16,9 +16,9 @@ Wikipedia Stream → Kafka → Flink → Apache Iceberg → DuckDB → Grafana
 - **Docker Compose** — orquestração local
 
 ## Status do Projeto
-- [x] Ambiente Docker com Kafka + Zookeeper
+- [x] Ambiente Docker com Kafka + Zookeeper + Flink
 - [x] Producer Python consumindo Wikipedia EventStream em tempo real
-- [ ] Consumer e processamento com Flink
+- [x] Flink job com Tumbling Window agregando edições por wiki
 - [ ] Armazenamento com Apache Iceberg
 - [ ] Observabilidade com Grafana
 
