@@ -55,7 +55,7 @@ def publicar_eventos():
                 }
                 
                 producer.produce(
-                    topic='onibus-localizacao',
+                    topic='wikipedia-events',
                     key=str(payload['wiki']),
                     value=json.dumps(payload),
                     callback=delivery_report
