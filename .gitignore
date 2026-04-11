@@ -1,10 +1,30 @@
-cat > .gitignore << 'EOF'
+# Python
 __pycache__/
 *.pyc
 *.pyo
-.env
-*.log
-.DS_Store
+
+# Ambiente virtual
 venv/
 .venv/
-EOF
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+*.env
+*secret*
+*api_key*
+*password*
+
+# Logs
+*.log
+.DS_Store
+
+# Dados gerados (binários e arquivos de warehouse)
+*.db
+*.db-shm
+*.db-wal
+*.parquet
+storage/warehouse/
+
+# uv
+uv.lock
